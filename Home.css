@@ -1,0 +1,136 @@
+a {
+    color: rgb(255, 0, 100);
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration:none !important; 
+    cursor:pointer;  
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    
+}
+
+.leftSection, .rightSection{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.header{
+    margin: 10px 300px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px;
+    border-color: rgb(255, 0, 100);
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 500px;
+}
+.homeButton{
+    margin-left: 10px;
+    font-size: 50px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+.homeButton:hover, .projectsButton:hover{
+    cursor: pointer;
+}
+.homeButton::before, .projectsButton::before, .links::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 0, 100);
+    transition: width 0.15s ease-out;
+}
+.homeButton:hover::before, .projectsButton:hover::before, .links:hover::before{
+    width: 100%;
+}
+.homeButton:active, .projectsButton:active{
+    color: rgb(134, 134, 134);
+}
+
+
+.linkedinImage, .githubImage{
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 100%;
+    transition: background-color 0.15s ease-out;
+}
+.linkedinImage:hover, .githubImage:hover{
+    background-color: rgb(255,0,100);
+    cursor: pointer;
+}
+.linkedinImage:active, .githubImage:active{
+background-color: rgba(255, 0, 100, 0.520);
+}
+.projectsButton{
+    margin-right: 10px;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+/* homeInfo */
+
+.homeInfo{
+    margin: 100px 300px;
+}
+.welcome{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 1px solid rgb(255,0,100);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-bottom: 5px;
+    min-width: 500px;
+}
+.about{
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+    margin-bottom: 25px;
+    word-spacing: 3px;
+    min-width: 500px;
+}
+.currentProject{
+    margin-top: 50px;
+    font-size: 25px;
+    border: 1px solid rgb(255,0,100);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-bottom: 5px;
+    margin-bottom: -20px;
+    min-width: 500px;
+}
+.projectsBox{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+.leftSubBox, .rightSubBox{
+    border: 1px solid rgb(255,0,100);
+    border-top: 0;
+    border-bottom: 0;
+    flex: 1;
+    border-left: 0;
+    text-align: center;
+}
+.rightSubBox{
+    border-right: 0;
+}

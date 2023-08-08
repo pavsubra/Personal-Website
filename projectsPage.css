@@ -1,0 +1,53 @@
+.projectInfo{
+    margin: 100px 300px;
+}
+.disclaimer{
+    margin-top: -30px;
+}
+.links{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.projectHeader{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px;
+    border-color: rgb(255, 0, 100);
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    min-width: 500px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.projectSection{
+    margin-bottom: 5px;
+}
+.projectTitle{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.projectTitle:hover{
+    color: rgb(255, 0, 100);
+    transition: color 0.25s;
+    cursor: pointer;
+}
+.projectTitle:active, .links:active{
+    color: rgba(255, 0, 100, 0.520);
+}
+.WIP{
+    font-style: italic; 
+    margin-right: 15px;
+    margin-left: 50px;
+}
+.WIP:hover{
+    color: white;
+    cursor: default;
+}
+.WIP:active{
+    color: white;
+}
