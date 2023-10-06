@@ -134,3 +134,27 @@ background-color: rgba(255, 0, 100, 0.520);
 .rightSubBox{
     border-right: 0;
 }
+
+@media only screen and (max-width: 550px){
+
+    .header, .homeInfo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .welcome{
+        margin-top: 100px;
+
+    }
+    .leftSubBox{
+        display:none;
+    }
+
+    .homeButton{
+        margin-left: 10px;
+        font-size: 30px;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px;
+    }
+}
